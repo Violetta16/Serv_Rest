@@ -7,7 +7,7 @@ from psycopg2 import Error
 
 def Connect(ip_addr):
     try:
-        connection = psycopg2.connect(user="postgres", password="12321", host=ip_addr, port="5432", database="postgres")
+        connection = psycopg2.connect(user="postgres", password="12345", host=ip_addr, port="5432", database="postgres")
         cursor = connection.cursor()
         sql_query = 'select 1;'
         cursor.execute(sql_query)
